@@ -1,0 +1,31 @@
+/*
+#Primary
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+#Neutral
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+#Font
+- Weights: 400, 700
+*/
+
+@media only screen and (max-width: 1440px) {
+  body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 9px;
+  }
+
+  .class {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+}
