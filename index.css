@@ -12,20 +12,77 @@
 */
 
 @media only screen and (max-width: 1440px) {
+
+  button {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+  }
+
   body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    margin: 0;
+    padding: 10% 15%;
   }
 
   p {
     font-size: 9px;
+    font-weight: 700;
   }
 
-  .class {
-    color: red;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "top top . ."
+      "bottom-1 bottom-2 . ."
+      ". . . .";
+  }
+
+  .top {
+    background-color: white;
+    grid-area: top;
+    border-radius: 5px;
+  }
+
+  .bottom-1 {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: bottom-1;
+    border-radius: 5px;
+  }
+
+  .bottom-2 {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: bottom-2;
+    border-radius: 5px;
   }
 }
 
 @media only screen and (max-width: 375px) {
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "top . . ."
+      "bottom-1 . . ."
+      "bottom-2 . . .";
+  }
+
+  .top {
+    grid-area: top;
+  }
+
+  .bottom-1 {
+    grid-area: bottom-1;
+  }
+
+  .bottom-2 {
+    grid-area: bottom-2;
+  }
 }
